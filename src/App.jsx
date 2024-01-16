@@ -2,7 +2,8 @@
 import "./App.css"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Homepage from "./pages/Homepage"
-import Stats from "./components/Stats/Stats"
+import CompletedTasks from "./pages/CompletedTasks"
+import ItemNotFound from "./components/NotFound"
 
 export default function App() {
   console.log("App loading...")
@@ -11,8 +12,8 @@ export default function App() {
       <div className="app">
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/stats" element={<Stats />} />
-          <Route path="*" element={<div> no item found</div>} />
+          <Route path="/completed" element={<CompletedTasks />} />
+          <Route path="*" element={<ItemNotFound />} />
         </Routes>
       </div>
     </BrowserRouter>
