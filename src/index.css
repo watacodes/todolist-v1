@@ -32,6 +32,10 @@ h1 {
   line-height: 1.1;
 }
 
+ul {
+  padding-inline-start: 0;
+}
+
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
