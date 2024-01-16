@@ -4,15 +4,12 @@ import Quote from "../components/Quote/Quote"
 import SubmitForm from "../components/SubmitForm/SubmitForm"
 import TodoList from "../components/TodoList/TodoList"
 import Progress from "../components/Progress/Progress"
+import { useTodoListContext } from "../contexts/TodoListProvider"
 
 export default function Homepage() {
   console.log("Rendering homepage...")
   const [todo, setTodo] = useState("")
-
-  const [todoList, setTodoList] = useState(() => {
-    const initialItems = localStorage.getItem("todos")
-    return initialItems ? JSON.parse(initialItems) : []
-  })
+  const { todoList, setTodoList } = useTodoListContext()
 
   return (
     <>
