@@ -25,7 +25,7 @@ export function Todo({ todo, todoList, setTodoList }) {
           type="checkbox"
           className={styles["todo__checkbox"]}
           onClick={handleClick}
-          checked={isChecked}
+          defaultChecked={isChecked}
         />
       </p>
     </div>
