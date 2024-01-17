@@ -10,7 +10,7 @@ export default function CompletedTasks() {
   return (
     <>
       <h2>Completed Tasks</h2>
-      {completedTasks ? (
+      {completedTasks.length ? (
         <>
           <p>
             You have completed {completedTasks.length} tasks so far. Well done!
@@ -20,7 +20,7 @@ export default function CompletedTasks() {
           </div>
         </>
       ) : (
-        <p>Completed tasks to achieve your goal!</p>
+        <p>Complete tasks to achieve your goal!</p>
       )}
     </>
   )
