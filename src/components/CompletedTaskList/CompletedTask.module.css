@@ -1,0 +1,11 @@
+.task {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.477);
+  border-radius: 8px;
+  margin: 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  width: 40vw;
+  padding: 1rem;
+}
