@@ -7,7 +7,7 @@ export const CompletedTaskList = ({ completedTasks }) => {
       <ul>
         <li>
           {completedTasks.map((task, idx) => (
-            <CompletedTask taskName={task.task} key={idx} />
+            <CompletedTask task={task} key={idx} />
           ))}
         </li>
       </ul>

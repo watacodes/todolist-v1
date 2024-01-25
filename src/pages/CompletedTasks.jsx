@@ -8,7 +8,7 @@ export default function CompletedTasks() {
   const completedTasks = todoList.filter((task) => task.isCompleted)
 
   return (
-    <>
+    <div className="app">
       <h2>Completed Tasks</h2>
       {completedTasks.length ? (
         <>
@@ -22,6 +22,6 @@ export default function CompletedTasks() {
       ) : (
         <p>Complete tasks to achieve your goal!</p>
       )}
-    </>
+    </div>
   )
 }

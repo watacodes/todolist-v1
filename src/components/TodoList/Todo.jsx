@@ -8,7 +8,10 @@ export function Todo({ todo, todoList, setTodoList }) {
     setIsChecked(!isChecked)
     const newTodoList = todoList.map((item) => {
       if (item.task === todo.task && item.id === todo.id) {
-        return { ...item, isCompleted: !isChecked }
+        return {
+          ...item,
+          isCompleted: !isChecked,
+        }
       } else {
         return item
       }

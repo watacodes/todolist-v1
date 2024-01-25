@@ -1,8 +1,9 @@
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  float: left;
+  display: block;
+  /* height: 4rem; */
+  max-width: 100dvw;
+  min-width: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,3 +1,4 @@
+import { Button } from "../miscellaneous/Button"
 import styles from "./SubmitForm.module.css"
 
 export default function SubmitForm({ todo, setTodo, todoList, setTodoList }) {
@@ -33,7 +34,7 @@ export default function SubmitForm({ todo, setTodo, todoList, setTodoList }) {
           id="task"
           className={styles["form__input"]}
         />
-        <button className={styles.btn}>Add Task</button>
+        <Button>Add task</Button>
       </div>
     </form>
   )
